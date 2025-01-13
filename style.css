@@ -1,0 +1,741 @@
+/* Global Styles */
+body {
+    background: url(images/headphones_hero_1.jpg) no-repeat center center; /* Center the background */
+    background-size: cover; /* Make the background cover the entire viewport */
+    height: 100vh; /* Ensure it takes the full height */
+    margin: 0;
+    color: white; /* Keep text visible */
+}
+
+
+:root {
+    --max-content-width: 1000px;
+    --link-hover-color: #FF6565;
+    --button-hover-opacity: 0.9;
+}
+
+/* Link Hover and Active Effects */
+a:hover, a:active {
+    color: var(--link-hover-color) !important;
+}
+
+
+/* Button Hover and Active Effects */
+button:hover, button:active {
+    opacity: var(--button-hover-opacity);
+}
+
+
+/* Define the custom font */
+
+
+@font-face {
+    font-family: 'HolbertonIcon';
+    src: url('/fonts/holberton_school-icon.woff2') format('woff2'),
+         url('/fonts/holberton_school-icon.woff') format('woff'),
+         url('/fonts/holberton_school-icon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+* {
+    font-family: 'HolbertonIcon', sans-serif;
+}
+  
+  /* General header styles */
+header {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo img {
+    margin-left: 60%;
+    width: 150px; /* Logo size */
+    height: auto;
+}
+
+/* Hamburger icon */
+header .hamburger svg {
+    display: block; /* Show hamburger icon on mobile */
+}
+header .hamburger svg{
+    width: 30px; /* Hamburger icon size */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Navigation menu styles */
+header .nav-menu {
+    background: none;
+    margin-left: 30%;
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Space between items */
+}
+
+header .nav-menu li {
+    cursor: pointer;
+
+}
+
+header .nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+
+header .nav-menu ul{
+    background: none;
+}
+
+
+
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero h2 {
+    margin-top: 200px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero button {
+    margin-top: 42px;
+    padding: 15px 20px;
+    background: rgb(236, 61, 61);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .hero button a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .herop{
+    margin-top: 60px;
+    font-size: 20px;
+  }
+  
+  .seen {
+    max-width: var(--max-content-width); /* Keep the max-width */
+    background: none;
+    margin: 0 auto; /* Center the element horizontally */
+    padding: 80px 20px;
+    color: rgb(0, 0, 3);
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center; /* Horizontal centering */
+    text-align: center;
+}
+
+
+.seen h2, .seen p {
+    text-align: center; /* Center-align the text */
+    max-width: 800px; /* Limit text width for readability */
+    margin: 0 auto 20px auto; /* Center horizontally and add spacing */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+
+
+.seen h2{
+    font-weight: lighter;
+}
+
+.ico {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute icons evenly */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Add spacing between the items */
+    margin-top: 40px; /* Add space above the icons */
+}
+
+.ico div {
+    text-align: center; /* Center-align the text in each icon */
+    max-width: 180px; /* Set a max width for each icon container */
+}
+
+.ico img {
+    width: 80px; /* Set a consistent width for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing below the icons */
+}
+
+.ico h3 {
+    margin: 10px 0; /* Add spacing above and below the heading */
+    font-size: 1.2rem; /* Adjust font size for better visibility */
+}
+
+.ico p {
+    font-size: 0.9rem; /* Adjust font size for readability */
+    line-height: 1.4; /* Improve text spacing */
+    color: #131212; /* Slightly lighter text for better contrast */
+}
+
+  .pent {
+    background-repeat: no-repeat;
+    background: url(images/headphones_hero_2.jpg) no-repeat center center; /* Keep your background */
+    background-size: cover; /* Ensure the background covers the section */
+    min-height: 100vh; /* Make the section at least the full height of the viewport, but allow it to grow */
+    padding: 80px 20px; /* Add more padding for content spacing */
+    color: white; /* Keep the text readable */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Align text to the center */
+}
+
+
+.pents h2, .pents p {
+    text-align: center; /* Center the text */
+    max-width: 800px; /* Limit text width for readability */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.pent h2{
+    margin-top: 50px; 
+}
+
+.pent p{
+    margin-top: 50px; 
+    line-height: 26px;
+}
+.pen {
+    max-width: var(--max-content-width);
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    display: flex; /* Use flexbox for positioning */
+    justify-content: space-around; /* Space out the items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    margin-top: 20px;
+}
+
+.pen img {
+    margin-top: 80px;
+    width: 170px; /* Set a fixed width for the pentagon images */
+    height: auto; /* Keep the aspect ratio */
+}
+
+.pen h3, .pen p {
+    margin: 10px 0;
+    text-align: center; /* Center-align the text below the pentagons */
+}
+.word h3{
+    font-size: 2em;
+}
+ .word {
+    position: absolute;
+    margin-left: 24px; 
+    margin-top: -120px; 
+    text-align: center; /* Center-align the text below the pentagons */
+}
+.contact {
+    max-width: var(--max-content-width);
+    color: #000;
+     margin-top: -50px; 
+    margin-left: 20px;
+    width: 80%;
+    padding: 60px 20px; /* Add some spacing for the section */
+    text-align: center; /* Center-align content */
+}
+
+.contact h2 {
+    font-size: 1.8rem; /* Adjust heading size */
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.contact form {
+    max-width: 500px; /* Limit form width */
+    margin: 0 auto; /* Center the form horizontally */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 20px; /* Add spacing between form elements */
+}
+
+.contact label {
+    font-size: 1rem; /* Standard font size */
+    text-align: left; /* Align labels to the left */
+}
+
+.contact input, 
+.contact textarea {
+    width: 100%; /* Full width inputs */
+    border: none; /* Remove default borders */
+    border-bottom: 1px solid #000; /* Add a bottom line */
+    padding: 5px 0; /* Minimal padding */
+    font-size: 1rem; /* Adjust font size */
+    outline: none; /* Remove default focus outline */
+}
+
+.contact input:focus, 
+.contact textarea:focus {
+    border-bottom: 1px solid #6200ea; /* Highlight bottom line on focus */
+}
+
+.contact button {
+    width: 50%;
+    margin-top: 42px;
+    margin-left: 85px;
+    padding: 15px 12px;
+    background: rgb(236, 61, 61);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+  
+  .contact button a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+
+  /* footer */
+footer {
+    background-color: #0a0814; /* Dark background color */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align all elements */
+}
+
+footer .logo.footer {
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically for mobile */
+    align-items: center; /* Center align logo and text */
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+footer .logo.footer img {
+    width: 160px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the logo image */
+}
+
+footer .soc {
+    display: flex; /* Use flexbox for social icons */
+    justify-content: center; /* Center align icons */
+    gap: 15px; /* Space between icons */
+    margin-bottom: 20px; /* Space below social icons */
+}
+
+footer .soc a img {
+    border-radius: 15px;
+    background-color: transparent;
+    width: 30px; /* Adjust size of icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer p {
+    font-size: 0.7rem; /* Slightly smaller text for copyright */
+    margin: 0; /* Remove default margin */
+    opacity: 0.8; /* Slightly dim the text */
+}
+
+
+
+
+
+
+
+ 
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    header .nav-menu {
+        display: none; /* Initially hide the menu */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute; /* Position menu on top of content */
+        top: 60px; /* Adjust for header height */
+        left: 0;
+        width: 70%; /* Menu width */
+        background: none; /* Match header background */
+        padding: 20px;
+        z-index: 1000; /* Ensure it appears above other elements */
+        
+    }
+
+    header .nav-menu li {
+        margin: 10px 0; /* Add spacing between menu items */
+    }
+
+    /* Show the menu when the checkbox is checked */
+    #toggle-menu:checked + .nav-menu {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 760px) and (max-width: 1024px) {
+    header .nav-menu {
+        margin-left: auto; /* Push it to the right */
+        margin-right: 20px; /* Add some space from the edge */
+        display: flex; /* Ensure it's displayed in a row */
+    }
+    header{
+        position: absolute;
+        margin-left: 30%;
+    }
+    header .hamburger svg{
+        display: none; /* Hide hamburger icon on tablet and desktop */
+    }
+    /* Adjust the pen section for two columns */
+    .pen, .ico {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns */
+        gap: 50px; /* Add spacing between items */
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+       justify-content: space-around;
+    }
+
+    /* Adjust the ico section for better alignment */
+    .ico {
+        justify-content: center; /* Center icons */
+        gap: 30px; /* Increase spacing between icons */
+    }
+
+    .ico div {
+        max-width: 150px; /* Adjust icon container width */
+    }
+
+    .ico img {
+        width: 70px; /* Reduce icon size slightly for tablets */
+    }
+
+    /* Footer adjustments */
+    footer .soc {
+        gap: 20px; /* Increase spacing between social icons */
+    }
+
+    footer p {
+        position: absolute;
+        font-size: 1rem; /* Adjust text size for readability */
+        margin-top: 30px;
+        padding-left: -50%;
+    }
+
+    .soc {
+        padding-left: 50%;
+    }
+
+
+    .seen {
+       margin-top: 20px;
+    }
+
+    .hero{
+        margin-top: 250px;
+    }
+    
+    .herop p, .this p {
+        max-width: 650px; 
+        font-size: 25px;
+        line-height: 1.5; /* Adjust spacing between lines */
+        text-align: center; /* Optional: Center-align the text */
+        margin-top: 80px; /* Optional: Center the block horizontally */
+        word-spacing: 3px; /* Ensure text wraps to the next line */
+    }
+
+    .this h2{
+        font-size: 2.5rem;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1025px) {
+    header .nav-menu {
+        margin-left: auto; /* Push it to the right */
+        margin-right: 20px; /* Add some space from the edge */
+        display: flex; /* Ensure it's displayed in a row */
+    }
+    .herop {
+        
+        max-width: 650px; /* Adjust the width to control text wrapping */
+
+        margin: 0 auto; /* Optional: Center the block horizontally */
+         
+    }
+
+    .herop p {
+        font-size: 25px;
+        line-height: 1.5; /* Adjust spacing between lines */
+        text-align: center; /* Optional: Center-align the text */
+        margin-top: 80px; /* Optional: Center the block horizontally */
+        word-spacing: 10px; /* Ensure text wraps to the next line */
+    }
+    header .hamburger svg {
+        display: none; /* Hide hamburger icon on tablet and desktop */
+    }
+    /* Adjust the pen section for four columns */
+    .pen {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Four columns */
+        gap: 20px; /* Add spacing between items */
+    }
+
+    /* Adjust the ico section for better alignment */
+    .ico {
+        justify-content: space-between; /* Space out icons */
+        gap: 40px; /* Increase spacing between icons */
+    }
+
+    .ico div {
+        max-width: 200px; /* Adjust icon container width */
+    }
+
+    .ico img {
+        width: 80px; /* Keep consistent icon size */
+    }
+
+    /* Footer adjustments */
+    footer{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+    }
+    footer .logo.footer {
+        flex-direction: row; /* Arrange logo and text horizontally */
+        justify-content: center; /* Center the items */
+        gap: 20px; /* Add spacing between items */
+    }
+
+    footer .soc {
+        gap: 25px; /* Increase spacing between social icons */
+    }
+
+    footer p {
+        font-size: 1rem; /* Slightly larger text for readability */
+    }
+
+    footer p {
+        position: absolute;
+        font-size: 1rem; /* Adjust text size for readability */
+        margin-top: 30px;
+        padding-left: -50%;
+    }
+
+    .soc {
+        padding-left: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+/* General styles for sections */  
+.seen, .pents {  
+    opacity: 0; /* Start hidden for animation */  
+    transform: translateY(20px); /* Slightly shift down for entry effect */  
+    animation: fadeInUp 0.8s forwards; /* Use the fade-in animation */  
+}  
+
+@keyframes fadeInUp {  
+    from {  
+        opacity: 0; /* Start with no opacity */  
+        transform: translateY(20px); /* Start position */  
+    }  
+    to {  
+        opacity: 1; /* End with full opacity */  
+        transform: translateY(0); /* End position */  
+    }  
+}  
+
+.seen {   
+    opacity: 1; /* Make visible when class is added */  
+}  
+
+
+
+.ico div {  
+    text-align: center;  
+    transition: transform 0.3s; /* Smooth transition for effect */  
+}  
+
+.ico div:hover {  
+    transform: scale(1.05); /* Slightly enlarge on hover */  
+}  
+
+
+
+
+
+
+.scale-animation {  
+    animation: scale 1.5s infinite alternate; /* Infinite scaling effect */  
+}  
+
+@keyframes scale {  
+    from {  
+        transform: scale(1); /* Original size */  
+    }  
+    to {  
+        transform: scale(1.1); /* Scale up */  
+    }  
+}
+
+
+
+
+.opacity-animation {  
+    animation: fade 2s infinite alternate; /* Infinite opacity effect */  
+}  
+
+@keyframes fade {  
+    from {  
+        opacity: 1; /* Fully visible */  
+    }  
+    to {  
+        opacity: 0.5; /* Semi-transparent */  
+    }  
+}
+
+
+.rotation-animation {  
+    animation: rotate 2s infinite linear; /* Continuous rotation */  
+}  
+
+@keyframes rotate {  
+    from {  
+        transform: rotate(0deg); /* Start at 0 degrees */  
+    }  
+    to {  
+        transform: rotate(360deg); /* Rotate full circle */  
+    }  
+}
+
+
+
+.bounce-animation {  
+    animation: bounce 1s infinite; /* Infinite bounce effect */  
+}  
+
+@keyframes bounce {  
+    0%, 20%, 50%, 80%, 100% {  
+        transform: translateY(0); /* Original position */  
+    }  
+    40% {  
+        transform: translateY(-30px); /* Bounce up */  
+    }  
+    60% {  
+        transform: translateY(-15px); /* Bounce down */  
+    }  
+}
+
+
+
+
+
+.ico div:hover {  
+    animation: scale 0.3s forwards; /* Scale up on hover */  
+}  
+
+@keyframes scale {  
+    from {  
+        transform: scale(1); /* Original size */  
+    }  
+    to {  
+        transform: scale(1.1); /* Scale up */  
+    }  
+}
+
+
+
+
+.ico div {  
+    transition: opacity 0.3s; /* Smooth transition */  
+}  
+
+.ico div:hover {  
+    opacity: 0.7; /* Change opacity on hover */  
+}
+
+
+
+
+.ico div:hover {  
+    animation: rotate 0.5s forwards; /* Rotate on hover */  
+}  
+
+@keyframes rotate {  
+    from {  
+        transform: rotate(0deg); /* Start at 0 degrees */  
+    }  
+    to {  
+        transform: rotate(360deg); /* Rotate full circle */  
+    }  
+}
+
+
+
+.ico div:hover {  
+    animation: bounce 0.5s forwards; /* Bounce on hover */  
+}  
+
+@keyframes bounce {  
+    0%, 100% {  
+        transform: translateY(0); /* Original position */  
+    }  
+    50% {  
+        transform: translateY(-10px); /* Bounce up */  
+    }  
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "alxwork",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "alxwork"
+	}
+}
